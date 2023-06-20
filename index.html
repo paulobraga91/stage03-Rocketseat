@@ -15,25 +15,27 @@
           <div id="page">
                                 
                                 <header>
-                                    <img src="./img/logoS.jgp.jpg" alt="">
-                                    <h1>Clínica Dra Stella Sousa</h1>
+                                    <img src="./img/logo.svg" alt="">
+                                    <h1>Clínica <br/>Dra. Stella Sousa</h1>
                                 </header>
+
+                                <p>Sistema para agendamento de consulta</p>
                             
-                                            <p>Sistema para agendamento de consulta</p>
+                                            
 
                         <form id="formConsulta">
                         <fieldset>
                         <h1>Dados do Paciente:</h1>
 
                             <label for="PacienteName">Nome paciente:</label>
-                            <input type="text" id="PacienteName" name="PacienteName" placeholder="Nome Completo">
+                            <input type="text" id="PacienteName" name="PacienteName" placeholder="Nome Completo" required>
 
                             <label for="email" required>Email:</label>
-                            <input type="email" id="email" name="email" placeholder="email@exemplo.com">
+                            <input type="email" id="email" name="email" placeholder="email@exemplo.com" required>
 
                             
                             <label for="tel">Telefone:</label>
-                            <input type="tel" id="tel" name="tel" placeholder="DDD-00000-0000">
+                            <input type="tel" id="tel" name="tel" placeholder="DDD-00000-0000"required>
 
                                 <div class="agrupamentoForm"> 
                                     <label for="age">Data Nascimento:</label>
@@ -44,12 +46,13 @@
                                 </div>  
 
                             <label for="plano">Convênio:</label>
-                            <select id="plano">
-                                <option id="1">unimed</option>
-                                <option id="2">Bradesco</option>
-                                <option id="3">HapiVida</option>
-                                <option id="4">Parcicular</option>
-                                <option id="5">SulAmerica</option>
+                            <select id="plano" required>
+                                <option id="0" value="">Selecione um Convênio:</option>
+                                <option id="1" value="unimed">unimed</option>
+                                <option id="2" value="Bradesco">Bradesco</option>
+                                <option id="3" value="HapiVida">HapiVida</option>
+                                <option id="4" value="Parcicular">Parcicular</option>
+                                <option id="5" value="SulAmerica">SulAmerica</option>
                             </select>
                         </fieldset>
 
@@ -58,12 +61,13 @@
                             <h1>Dados do Médico:</h1>
 
                             <label for="doctor">Médico:</label>
-                            <select id="doctor">
-                                <option id="1">Dr Paulo Braga</option>
-                                <option id="2">Dr Shellida </option>
-                                <option id="3">Dr Stella</option>
-                                <option id="4">Dr Mateus</option>
-                                <option id="5">Dr Braga</option>
+                            <select id="doctor" required>
+                                <option id="0" value="">Selecione um Médico:</option>
+                                <option id="1" value="Dr Paulo Braga">Dr Paulo Braga</option>
+                                <option id="2" value="Dr Shellida">Dr Shellida </option>
+                                <option id="3" value="Dr Stella">Dr Stella</option>
+                                <option id="4" value="Dr Mateus">Dr Mateus</option>
+                                <option id="5" value="Dr Braga">Dr Braga</option>
                             </select>
 
                             <label for="date">Data  e hora Consulta:</label>
